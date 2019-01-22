@@ -16,7 +16,11 @@
         </a-assets>
 
         <a-marker type='barcode' value='7'>
-            <a-box position='0 0.5 0' color="clear"></a-box>
+            <a-entity
+                id="animated-model"
+                obj-model="#animated-asset"
+                scale="2">
+            </a-entity>
         </a-marker>
 
         <a-marker markerhandler emitevents="true" cursor="fuse: false; rayOrigin: mouse" id="animated-marker" type='barcode' value='7'>
