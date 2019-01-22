@@ -1,27 +1,16 @@
+<script src='js/aframe-8.min.js'></script>
+<!--<script src='js/aframe-extras.loaders.min.js'></script>-->
+<script src='js/aframe-ar.min.js'></script>
 
-<!doctype HTML>
-<html>
-    <head>
-        <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
-    </head>
-    <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
-    <script src="https://rawgit.com/jeromeetienne/AR.js/master/aframe/build/aframe-ar.min.js"></script>
-    <script src="https://rawgit.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
-    <script src="https://mzurry.github.io/events.js"></script>
-    <body style='margin : 0px; overflow: hidden;'>
-        <!-- we add detectionMode and matrixCodeType to tell AR.js to recognize barcode markers -->
-        <a-scene embedded arjs='sourceType: webcam;'>
-   
-            <a-marker type='barcode' value='7'>
-                <!-- Adding an OBJ file to an AR Project-->    
-                <a-entity 
-                      <a-entity gltf-model="url(https://mzurry.github.io/models/Robot_Pepper_4.glb)" scale="0.2 0.2 0.2">
-                </a-entity>
-            
-            </a-marker>
-     
-        <a-entity camera>
-        </a-entity>
-       </a-scene>
-    </body>
-</html>
+<a-scene embedded arjs='sourceType: webcam;'>
+
+<a-marker type='barcode' value='7'>
+
+<a-entity gltf-model="url(https://mzurry.github.io/models/Robot_Pepper_4.glb)" scale="0.2 0.2 0.2">
+
+
+</a-marker>
+
+<a-entity camera></a-entity>
+
+</a-scene>
