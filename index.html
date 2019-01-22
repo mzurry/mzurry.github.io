@@ -14,7 +14,9 @@
         
         <a-marker type='barcode' value='7'>
          <!-- Adding an Gtlf file to an AR Project-->    
-                <a-entity gltf-model="https://mzurry.github.io/models/Robot_Pepper_4.glb"scale="0.05 0.05 0.05"></a-entity>        
+                <a-entity gltf-model="https://mzurry.github.io/models/Robot_Pepper_4.glb"scale="0.05 0.05 0.05"></a-entity>
+                <a-animation attribute="rotation" dur="7000" to="0 360 0" easing="linear" repeat="indefinite">
+                </a-animation>
         </a-marker>
             
             <!-- use this <a-entity camera> to support multiple-markers, otherwise use <a-marker-camera> instead of </a-marker> -->
